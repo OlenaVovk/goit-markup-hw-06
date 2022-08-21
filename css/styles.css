@@ -626,10 +626,14 @@ body {
     cursor: pointer;
 }
     
+form {
+    max-width: 100%;
+}
 
 
-
-
+label {
+    display: block;
+}
 
 
 
