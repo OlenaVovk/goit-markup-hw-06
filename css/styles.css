@@ -103,6 +103,24 @@ body {
     margin-bottom: 10px;
 }
 
+.hero .button,
+.footer .footer-form-btn {
+    color: var(--secondary-accent-color);
+    font-family: var(--primary-text-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    border: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: background 250ms var(--primary-timing-function),
+        box-shadow 250ms var(--primary-timing-function);
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -270,21 +288,10 @@ body {
 }
 
 .hero .button {
-    background-color: var(--accent-color);
-    border-radius: 4px;
-    color: var(--secondary-accent-color);
-    font-family: var(--primary-text-family);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
     padding: 10px 32px;
     min-width: 216px;
-    border: 0;
-    cursor: pointer;
-    transition: background 250ms var(--primary-timing-function), box-shadow 250ms var(--primary-timing-function);
- }
+
+}
 
  .hero .button:hover,
  .hero .button:focus {
@@ -500,7 +507,7 @@ body {
 .footer .container {
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
+    
 }
 
 .footer .footer-nav {
@@ -510,6 +517,8 @@ body {
 .footer .footer-social-networks {
     min-width: 206px;
     min-height: 80px;
+    margin-right: auto;
+  
 
    /* outline: 1px solid white;*/
 }
@@ -582,25 +591,46 @@ body {
 .footer .footer-form {
     display: flex;
     flex-direction: column;
+
 }
 
 .footer .footer-form-input {
     width: 358px;
     height: 50px;
+    padding-left: 16px;
+    margin-right: 12px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: transparent;
-    padding-left: 16px;
-
+   
 }
 
-.footer-form-btn {
-min-width: 47px;
-font-size: 16px;
-line-height: 1.25;
-color: rgba(255, 255, 255, 0.6);
+.footer .footer-form-input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
 }
+
+.footer .footer-form-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    padding: 10px 28px;
+}
+
+.footer .btn-icon {
+    margin-left: 10px;
+    fill: var(--secondary-accent-color);
+}
+
+
+
+
+ 
 
 /*===== МОДАЛЬНЕ ВІКНО =====*/
 
