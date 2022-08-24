@@ -698,28 +698,6 @@ body {
      
 }
 
-.close-icon-button {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: var(--secondary-accent-color);
-    cursor: pointer;
-    transition: fill 250ms var(--primary-timing-function);
-}
-
-.close-icon-button:hover,
-.close-icon-button:focus {
-   fill: var(--accent-color);
-}
-
 .modal-form {
     display: block;
     width: 100%;
@@ -827,6 +805,10 @@ body {
 
 }
 
+.checkbox-input:focus-within +.label-checkbox:before {
+    outline: 1px solid var(--accent-color);
+}
+
 .checkbox-input:checked + .label-checkbox:before {
     outline: 1px solid var(--accent-color);
     border: none;
@@ -859,6 +841,27 @@ body {
     text-align: center;
 }
 
+.close-icon-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--secondary-accent-color);
+    cursor: pointer;
+    transition: fill 250ms var(--primary-timing-function);
+}
+
+.close-icon-button:hover,
+.close-icon-button:focus {
+    fill: var(--accent-color);
+}
 
 
 /*===== ПОРТФОЛІО =====*/
